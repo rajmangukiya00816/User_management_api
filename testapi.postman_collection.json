@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "4d69aad3-8d82-47d3-8e6c-198c5dee68a0",
+		"name": "testapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26556967"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"abcd123@gmail.com\",\r\n    \"password\" : \"123456\",\r\n    \"username\" : \"raj_mangukiya\",\r\n    \"full_name\" : \"Raj\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"abcd123@gmail.com\",\r\n    \"password\" : \"123456\"\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\":\"eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ0OWU0N2ZiZGQ0ZWUyNDE0Nzk2ZDhlMDhjZWY2YjU1ZDA3MDRlNGQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vdGVzdGFwaS0zMzRjNyIsImF1ZCI6InRlc3RhcGktMzM0YzciLCJhdXRoX3RpbWUiOjE2OTkxOTA2MDYsInVzZXJfaWQiOiJyYWpfbWFuZ3VraXlhIiwic3ViIjoicmFqX21hbmd1a2l5YSIsImlhdCI6MTY5OTE5MDYwNiwiZXhwIjoxNjk5MTk0MjA2LCJlbWFpbCI6ImFiY2QxMjNAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImFiY2QxMjNAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.ZA6jVI27kdBN1bTe-yqfVy_FPKyoPtN2eB-RnmLCRwDms8gJ0HQt_0HrkufB8tpQngdwUaGLFuwtG3GeFmObV5eb7Yc8v5r-JWNTjgUKZzWisIwfGfc1a_gqQsLihqS8W5fOtF4pCWcUvY5aHLtAKdP1DzLIomJC0CFR1av7ei2XKlxI2lLHIoBy8pSeE8bkwrkaGBqrCBaJKVvnHMHNezKGiPqOVDpp9YzY3Qgc5VkfvtWXqgX910uS65YNn_b17TIKefCZr6-ADjD0WLxIcEsfLq-dbK6KtBiWPY6CfjugVZBHojuPyXrV_6CGTq8ND0kFb2bVbeu0IVL-_nHHCQ\",\r\n    \"email\":\"jaymangukiya0001@gmail.com\",\r\n    \"full_name\" : \"RED\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "display",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ0OWU0N2ZiZGQ0ZWUyNDE0Nzk2ZDhlMDhjZWY2YjU1ZDA3MDRlNGQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vdGVzdGFwaS0zMzRjNyIsImF1ZCI6InRlc3RhcGktMzM0YzciLCJhdXRoX3RpbWUiOjE2OTkxOTA2MDYsInVzZXJfaWQiOiJyYWpfbWFuZ3VraXlhIiwic3ViIjoicmFqX21hbmd1a2l5YSIsImlhdCI6MTY5OTE5MDYwNiwiZXhwIjoxNjk5MTk0MjA2LCJlbWFpbCI6ImFiY2QxMjNAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImFiY2QxMjNAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.ZA6jVI27kdBN1bTe-yqfVy_FPKyoPtN2eB-RnmLCRwDms8gJ0HQt_0HrkufB8tpQngdwUaGLFuwtG3GeFmObV5eb7Yc8v5r-JWNTjgUKZzWisIwfGfc1a_gqQsLihqS8W5fOtF4pCWcUvY5aHLtAKdP1DzLIomJC0CFR1av7ei2XKlxI2lLHIoBy8pSeE8bkwrkaGBqrCBaJKVvnHMHNezKGiPqOVDpp9YzY3Qgc5VkfvtWXqgX910uS65YNn_b17TIKefCZr6-ADjD0WLxIcEsfLq-dbK6KtBiWPY6CfjugVZBHojuPyXrV_6CGTq8ND0kFb2bVbeu0IVL-_nHHCQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/display",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"display"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"jaymangukiya0001@gmail.com\",\r\n    \"password\" : \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
